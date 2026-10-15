@@ -182,7 +182,7 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <p class="text-xs font-semibold text-slate-500 uppercase">Dân số địa bàn xã</p>
-                            <h3 class="text-2xl font-black text-slate-800 mt-1" id="stat-population">14,119</h3>
+                            <h3 class="text-2xl font-black text-slate-800 mt-1" id="stat-population">14,238</h3>
                             <p class="text-[11px] text-emerald-600 font-medium mt-1"><i class="fa-solid fa-check-circle mr-0.5"></i> Đồng bộ CSDL Quốc gia DC01</p>
                         </div>
                         <div class="p-3 bg-red-50 text-red-600 rounded-lg"><i class="fa-solid fa-users text-xl"></i></div>
@@ -193,8 +193,8 @@
                     <button onclick="editStatCard('stat-households', 'Hộ gia đình / Cơ sở KDO')" class="admin-only hidden absolute top-2 right-2 text-slate-400 hover:text-blue-600 text-xs transition p-1" title="ADMIN: Sửa"><i class="fa-solid fa-pen"></i></button>
                     <div class="flex justify-between items-start">
                         <div>
-                            <p class="text-xs font-semibold text-slate-500 uppercase">Hộ gia đình / Cơ sở KDO</p>
-                            <h3 class="text-2xl font-black text-slate-800 mt-1" id="stat-households">3,298 / 1</h3>
+                            <p class="text-xs font-semibold text-slate-500 uppercase">Hộ gia đình / Cơ sở KD</p>
+                            <h3 class="text-2xl font-black text-slate-800 mt-1" id="stat-households">3,299 / 01</h3>
                             <p class="text-[11px] text-blue-600 font-medium mt-1"><i class="fa-solid fa-qrcode mr-0.5"></i> 100% gắn mã QR quản lý</p>
                         </div>
                         <div class="p-3 bg-blue-50 text-blue-600 rounded-lg"><i class="fa-solid fa-house-user text-xl"></i></div>
@@ -417,7 +417,7 @@
                                 <li>Xác nhận thông tin cư trú (CT07)</li>
                             </ul>
                         </div>
-                        <a href="https://https://dichvucong.bocongan.gov.vn/bocongan/bothutuc?muc_do=MUC_DO_3,MUC_DO_4" target="_blank" rel="noopener noreferrer" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2 rounded-lg text-xs text-center transition flex items-center justify-center gap-1.5 shadow">
+                        <a href="https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/listThuTuc?co_quan_cha=&loai_co_quan=&co_quan_con=&linh_vuc=&muc_do=&tukhoa=thường trú&doi_tuong=&cap_thuc_hien=&co_quan_cuc=&co_quan_tinh=CA_DONGNAI&co_quan_huyen=&co_quan_xa=CA_DONGNAI_25261_PHUTRUNG" target="_blank" rel="noopener noreferrer" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2 rounded-lg text-xs text-center transition flex items-center justify-center gap-1.5 shadow">
                             <span>Nộp Hồ Sơ Cư Trú</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                         </a>
@@ -438,7 +438,7 @@
                                 <li>Cấp tài khoản Định danh điện tử</li>
                             </ul>
                         </div>
-                        <a href="https://https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/listThuTuc" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 rounded-lg text-xs text-center transition flex items-center justify-center gap-1.5 shadow">
+                        <a href="https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/listThuTuc?co_quan_cha=&loai_co_quan=&co_quan_con=&linh_vuc=&muc_do=&tukhoa=CĂN CƯỚC&doi_tuong=&cap_thuc_hien=&co_quan_cuc=&co_quan_tinh=CA_DONGNAI&co_quan_huyen=&co_quan_xa=CA_DONGNAI_25261_PHUTRUNG" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 rounded-lg text-xs text-center transition flex items-center justify-center gap-1.5 shadow">
                             <span>Nộp Hồ Sơ Căn Cước</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                         </a>
@@ -817,7 +817,7 @@
             <p class="text-xs text-slate-500 mb-4">Nhập mã PIN bảo mật để kích hoạt quyền Thêm/Sửa/Xóa dữ liệu</p>
             
             <form onsubmit="submitAdminAuth(event)" class="space-y-3">
-                <input type="password" id="admin-pin-input" placeholder="Mật khẩu (LIÊN HỆ SĐT: 0335333033)" maxlength="10" required class="w-full text-center tracking-widest text-lg font-bold border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-red-600">
+                <input type="password" id="admin-pin-input" placeholder="LHỆ SĐT:0335333033" maxlength="10" required class="w-full text-center tracking-widest text-lg font-bold border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-red-600">
                 <p id="auth-error-msg" class="text-xs text-red-600 font-bold hidden"><i class="fa-solid fa-triangle-exclamation"></i> Mật khẩu không chính xác!</p>
                 <div class="flex gap-2 pt-2">
                     <button type="button" onclick="cancelAdminAuth()" class="w-1/2 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-2 rounded-lg text-xs transition">Hủy bỏ</button>
