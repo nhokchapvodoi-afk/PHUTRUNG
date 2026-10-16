@@ -109,7 +109,7 @@
                     </p>
                     <p class="text-xs font-bold text-white flex items-center justify-end gap-1 mt-0.5">
                         <i class="fa-solid fa-user-shield text-yellow-300"></i>
-                        <span id="current-officer-name">Khách / Công Dân</span>
+                        <span id="current-officer-name">Công Dân</span>
                     </p>
                 </div>
 
@@ -848,20 +848,22 @@
         // Fallback Data
         const DEFAULT_STATS = { population: '12,450', households: '3,120 / 145', incidents: '18', digitization: '98.5%' };
         const DEFAULT_OFFICERS = [
-            { id: 1, name: 'Đại úy Nguyễn Văn A', role: 'Chỉ huy Công an xã', status: 'Trực ban' },
-            { id: 2, name: 'Thượng úy Trịnh Văn B', role: 'Cán bộ CSQLHC về TTXH', status: 'Sẵn sàng tác chiến' },
-            { id: 3, name: 'Trung úy Lê Thị C', role: 'Cán bộ Cảnh sát khu vực', status: 'Đang tuần tra THÔN ĐỒNG TÂM' }
+            { id: 1, name: 'Thượng tá Trần Văn Duẩn', role: 'Trưởng Công an xã', status: 'ĐT:0913965100' },
+            { id: 2, name: 'Trung tá Phạm Xuân Kiên', role: 'Phó Trưởng Công an xã TH', status: 'ĐT:0976938909' },
+            { id: 3, name: 'Trung tá Vũ Quang Huy', role: 'Phó Trưởng Công an xã AN', status: 'ĐT:0985305537' }
+            { id: 4, name: 'Trung tá Nguyễn Hải Phương', role: 'Phó Trưởng Công an xã CSKVTT', status: 'ĐT:0918878679' }
+        { id: 4, name: 'Thiếu tá Đoàn Văn Thực', role: 'Phó Trưởng Công an xã PCTP', status: 'ĐT:0979369510' }
         ];
         const DEFAULT_TASKS = [
-            { id: 101, title: 'Kiểm tra an toàn PCCC hộ kinh doanh Ấp 1', officer: 'Thượng úy Trịnh Văn B', deadline: '15/10/2026', priority: 'Khẩn', status: 'Đang thực hiện' },
-            { id: 102, title: 'Số hóa 150 hồ sơ CT07 đăng ký cư trú', officer: 'Trung úy Lê Thị C', deadline: '18/10/2026', priority: 'Quan trọng', status: 'Đang thực hiện' }
+            { id: 101, title: 'Kiểm tra an toàn PCCC hộ kinh doanh Thôn Đồng Tâm', officer: 'Thượng úy Nguyễn Đức Triệu', deadline: '15/10/2026', priority: 'Khẩn', status: 'Đang thực hiện' },
+            { id: 102, title: 'Số hóa 150 hồ sơ CT07 đăng ký cư trú', officer: 'Thượng úy Nguyễn Công Hoàng Tuấn', deadline: '18/10/2026', priority: 'Quan trọng', status: 'Đang thực hiện' }
         ];
         const DEFAULT_DVC = [
             { id: 'DVC-2026-001', procedure: 'Đăng ký Tạm trú', citizen: 'Trần Văn Hoàng', phone: '0981234567', date: '12/10/2026', deadline: '15/10/2026', officer: 'Thượng úy Trịnh Văn B', status: 'Đang xử lý', note: 'Đã nhận đủ hồ sơ CT01' },
             { id: 'DVC-2026-002', procedure: 'Xác nhận số định danh & Cư trú', citizen: 'Phạm Thị Mai', phone: '0912345678', date: '11/10/2026', deadline: '13/10/2026', officer: 'Trung úy Lê Thị C', status: 'Đã hoàn thành', note: 'Đã cấp giấy xác nhận CT07' }
         ];
         const DEFAULT_REPORTS = [
-            { id: 'PA-101', cat: 'Trật tự xã hội', name: 'Lê Văn T.', location: 'Ấp 2', content: 'Có nhóm thanh niên tụ tập tiếng ồn sau 23h', time: '10 phút trước', status: 'Đã tiếp nhận' }
+            { id: 'PA-101', cat: 'Trật tự xã hội', name: 'Lê Văn T.', location: 'Thôn Phú Nghĩa', content: 'Có nhóm thanh niên tụ tập tiếng ồn sau 23h', time: '10 phút trước', status: 'Đã tiếp nhận' }
         ];
 
         let statsData = loadStorageData(STORAGE_KEYS.STATS, DEFAULT_STATS);
