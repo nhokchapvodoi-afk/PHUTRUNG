@@ -221,35 +221,89 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b pb-3 mb-4 gap-2">
-                    <h3 class="text-sm font-bold text-slate-800 uppercase flex items-center gap-2">
-                        <i class="fa-solid fa-map-location-dot text-red-600"></i> BẢN ĐỒ SỐ GIÁM SÁT AN NINH TRẬT TỰ ĐỊA BÀN (4 Thôn XÃ PHÚ TRUNG)
-                    </h3>
-                    <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-arrows-rotate mr-1 animate-spin text-blue-600"></i> Cập nhật tự động</span>
+            <!-- BẢN ĐỒ SỐ GIÁM SÁT AN NINH TRẬT TỰ ĐỊA BÀN -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 space-y-4">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b pb-3 gap-2">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-800 uppercase flex items-center gap-2">
+                            <i class="fa-solid fa-map-location-dot text-red-600"></i> BẢN ĐỒ SỐ GIÁM SÁT AN NINH TRẬT TỰ ĐỊA BÀN (4 Thôn XÃ PHÚ TRUNG)
+                        </h3>
+                        <p class="text-xs text-slate-500 mt-0.5">Nhấn vào từng thôn để định vị trực tiếp trên Google Maps hoặc xem chỉ đường tuần tra ANTT</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Xã+Phú+Trung,+Đồng+Nai" target="_blank" rel="noopener noreferrer" class="text-xs bg-red-50 hover:bg-red-100 text-red-700 font-bold px-3 py-1.5 rounded-lg border border-red-200 transition flex items-center gap-1.5 whitespace-nowrap">
+                        <i class="fa-solid fa-earth-americas"></i> Mở Bản Đồ Toàn Xã (Google Maps)
+                    </a>
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-center">
-                    <div onclick="filterReportByLocation('THÔN PHÚ AN')" class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition cursor-pointer group">
-                        <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN PHÚ AN</span>
-                        <p class="text-sm font-black text-slate-800 mt-1">3,239 dân</p>
-                        <span class="inline-block mt-2 text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">An toàn</span>
+                    <!-- THÔN PHÚ AN -->
+                    <div class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition flex flex-col justify-between group">
+                        <div onclick="filterReportByLocation('THÔN PHÚ AN')" class="cursor-pointer">
+                            <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN PHÚ AN</span>
+                            <p class="text-sm font-black text-slate-800 mt-1">3,539 dân</p>
+                            <span class="inline-block mt-2 text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">An toàn</span>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-slate-200 space-y-1.5">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Thôn+Phú+An,+Xã+Phú+Trung,+Đồng+Nai" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] font-bold py-1.5 px-2 rounded-lg transition flex items-center justify-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-location-arrow"></i> Chỉ đường Maps <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div onclick="filterReportByLocation('THÔN PHÚ NGHĨA')" class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition cursor-pointer group">
-                        <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN PHÚ NGHĨA</span>
-                        <p class="text-sm font-black text-slate-800 mt-1">3,589 dân</p>
-                        <span class="inline-block mt-2 text-[10px] bg-yellow-100 text-yellow-800 px-2.5 py-0.5 rounded-full font-bold">Lưu ý ANTT</span>
+
+                    <!-- THÔN PHÚ NGHĨA -->
+                    <div class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition flex flex-col justify-between group">
+                        <div onclick="filterReportByLocation('THÔN PHÚ NGHĨA')" class="cursor-pointer">
+                            <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN PHÚ NGHĨA</span>
+                            <p class="text-sm font-black text-slate-800 mt-1">3,789 dân</p>
+                            <span class="inline-block mt-2 text-[10px] bg-yellow-100 text-yellow-800 px-2.5 py-0.5 rounded-full font-bold">Lưu ý ANTT</span>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-slate-200 space-y-1.5">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Thôn+Phú+Nghĩa,+Xã+Phú+Trung,+Đồng+Nai" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] font-bold py-1.5 px-2 rounded-lg transition flex items-center justify-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-location-arrow"></i> Chỉ đường Maps <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div onclick="filterReportByLocation('THÔN ĐỒNG TÂM')" class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition cursor-pointer group">
-                        <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN ĐỒNG TÂM</span>
-                        <p class="text-sm font-black text-slate-800 mt-1">3,328 dân</p>
-                        <span class="inline-block mt-2 text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">An toàn</span>
+
+                    <!-- THÔN ĐỒNG TÂM -->
+                    <div class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition flex flex-col justify-between group">
+                        <div onclick="filterReportByLocation('THÔN ĐỒNG TÂM')" class="cursor-pointer">
+                            <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN ĐỒNG TÂM</span>
+                            <p class="text-sm font-black text-slate-800 mt-1">3,503 dân</p>
+                            <span class="inline-block mt-2 text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">An toàn</span>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-slate-200 space-y-1.5">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Thôn+Đồng+Tâm,+Xã+Phú+Trung,+Đồng+Nai" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] font-bold py-1.5 px-2 rounded-lg transition flex items-center justify-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-location-arrow"></i> Chỉ đường Maps <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div onclick="filterReportByLocation('THÔN ĐỒNG TIẾN')" class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition cursor-pointer group">
-                        <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN ĐỒNG TIẾN</span>
-                        <p class="text-sm font-black text-slate-800 mt-1">3,129 dân</p>
-                        <span class="inline-block mt-2 text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">An toàn</span>
+
+                    <!-- THÔN ĐỒNG TIẾN -->
+                    <div class="p-4 bg-slate-50 border rounded-xl hover:border-red-500 hover:bg-red-50/30 transition flex flex-col justify-between group">
+                        <div onclick="filterReportByLocation('THÔN ĐỒNG TIẾN')" class="cursor-pointer">
+                            <span class="text-xs font-bold text-slate-500 group-hover:text-red-700">THÔN ĐỒNG TIẾN</span>
+                            <p class="text-sm font-black text-slate-800 mt-1">3,411 dân</p>
+                            <span class="inline-block mt-2 text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">An toàn</span>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-slate-200 space-y-1.5">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Thôn+Đồng+Tiến,+Xã+Phú+Trung,+Đồng+Nai" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] font-bold py-1.5 px-2 rounded-lg transition flex items-center justify-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-location-arrow"></i> Chỉ đường Maps <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                            </a>
+                        </div>
                     </div>
+                </div>
+
+                <!-- EMBEDDED GOOGLE MAP FRAME -->
+                <div class="w-full h-80 rounded-xl overflow-hidden border border-slate-300 shadow-inner relative">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d107.1!3d10.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sUGjDsSBUcnVuZywgxJAwbmcgTmFpLCBWaWV0bmFt!5e0!3m2!1svi!2s!4v1710000000000!5m2!1svi!2s">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -260,7 +314,7 @@
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
                     <div class="flex justify-between items-center mb-4 border-b pb-2">
                         <h3 class="text-sm font-bold text-slate-800 uppercase flex items-center gap-2">
-                            <i class="fa-solid fa-user-gear text-red-600"></i> Trạng thái Quân số trực
+                            <i class="fa-solid fa-user-gear text-red-600"></i> DANH SÁCH CHỈ HUY CAX PHÚ TRUNG 
                         </h3>
                         <div class="flex items-center gap-2">
                             <span class="text-xs text-slate-500 font-medium" id="officer-count-badge">06 cán bộ</span>
@@ -799,7 +853,7 @@
             <p class="text-xs text-slate-500 mb-4">Nhập mã PIN bảo mật để kích hoạt quyền Thêm/Sửa/Xóa dữ liệu</p>
             
             <form onsubmit="submitAdminAuth(event)" class="space-y-3">
-                <input type="password" id="admin-pin-input" placeholder="LH (0335333033)" maxlength="10" required class="w-full text-center tracking-widest text-lg font-bold border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-red-600">
+                <input type="password" id="admin-pin-input" placeholder="LH 0335.333.033" maxlength="10" required class="w-full text-center tracking-widest text-lg font-bold border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-red-600">
                 <p id="auth-error-msg" class="text-xs text-red-600 font-bold hidden"><i class="fa-solid fa-triangle-exclamation"></i> Mật khẩu không chính xác!</p>
                 <div class="flex gap-2 pt-2">
                     <button type="button" onclick="cancelAdminAuth()" class="w-1/2 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-2 rounded-lg text-xs transition">Hủy bỏ</button>
@@ -828,13 +882,16 @@
 
         const DEFAULT_STATS = { population: '14,238', households: '3,299 / 01', incidents: '1', digitization: '98.5%' };
         const DEFAULT_OFFICERS = [
-            { id: 1, name: 'Trung tá Trần Văn Duẩn', role: 'Trưởng Công an xã', status: 'Trực Chỉ huy' },
-            { id: 2, name: 'Trung tá Phạm Xuân Kiên', role: 'Phó Trưởng Công an xã', status: 'Sẵn sàng tác chiến' },
-            { id: 3, name: 'Thiếu tá Nguyễn Đăng Thành', role: 'Phó Trưởng Công an xã', status: 'Đang tuần tra THÔN ĐỒNG TÂM' }
+            { id: 1, name: 'Trung tá Trần Văn Duẩn', role: 'Trưởng Công an xã', status: 'ĐT:0913965100' },
+            { id: 2, name: 'Trung tá Phạm Xuân Kiên', role: 'Phó Trưởng Công an xã TH', status: 'ĐT:0976938909' },
+            { id: 3, name: 'Trung tá Vũ Quang Huy', role: 'Phó Trưởng Công an xã AN', status: 'ĐT:0985305537' },
+            { id: 4, name: 'Trung tá Nguyễn Hải Phương', role: 'Phó Trưởng Công an xã CSKV', status: 'ĐT:0918878679' },
+            { id: 5, name: 'Thiếu tá Đoàn Văn Thực', role: 'Phó Trưởng Công an xã PCTP', status: 'ĐT: 0979369510' },
+            { id: 6, name: 'Thiếu tá Nguyễn Đăng Thành', role: 'Phó Trưởng Công an xã CSTT', status: 'ĐT: 0982125135' },
         ];
         const DEFAULT_TASKS = [
             { id: 101, title: 'Kiểm tra an toàn PCCC hộ kinh doanh Thôn Phú An', officer: 'Thiếu tá Nguyễn Đăng Thành', deadline: '15/10/2026', priority: 'Khẩn', status: 'Đang thực hiện' },
-            { id: 102, title: 'Số hóa 150 hồ sơ CT07 đăng ký cư trú', officer: 'Thiếu tá Nguyễn Đăng Thành', deadline: '18/10/2026', priority: 'Quan trọng', status: 'Đang thực hiện' }
+            { id: 102, title: 'Số hóa 150 hồ sơ CT07 đăng ký cư trú', officer: 'Trung tá Nguyễn Hải Phương', deadline: '18/10/2026', priority: 'Quan trọng', status: 'Đang thực hiện' }
         ];
         const DEFAULT_DVC = [
             { id: 'DVC-2026-001', procedure: 'Đăng ký Tạm trú', citizen: 'Trần Văn Hoàng', phone: '0981234567', date: '12/10/2026', deadline: '15/10/2026', officer: 'Thượng úy Trịnh Văn B', status: 'Đang xử lý', note: 'Đã nhận đủ hồ sơ CT01' },
@@ -862,8 +919,6 @@
         function saveStorageData(key, data) {
             try {
                 localStorage.setItem(key, JSON.stringify(data));
-                // Thông báo lưu tự động ngầm khi upload lên internet
-                console.log(`[AUTO-SYNC CLOUD/LOCAL]: Saved changes to ${key}`);
             } catch (e) {
                 console.error("Storage error:", e);
             }
@@ -905,7 +960,6 @@
             toggleQrModal();
             switchUserRole('officer');
             document.getElementById('current-officer-name').innerText = 'Đại úy Nguyễn Văn AI (VNeID)';
-            alert("Xác thực VNeID Cấp độ 2 thành công! Đã đăng nhập hệ thống với vai trò Cán bộ Vận hành.");
         }
 
         function handleRoleSwitchRequest(targetRole) {
@@ -1093,23 +1147,21 @@
         }
 
         function openTaskModal(id = null) {
-            const select = document.getElementById('task-officer');
-            if (select) {
-                select.innerHTML = '';
-                officersData.forEach(o => {
-                    const opt = document.createElement('option');
-                    opt.value = o.name;
-                    opt.textContent = o.name;
-                    select.appendChild(opt);
-                });
-            }
-
             document.getElementById('task-edit-id').value = id || '';
+            const selectEl = document.getElementById('task-officer');
+            selectEl.innerHTML = '';
+            officersData.forEach(o => {
+                const opt = document.createElement('option');
+                opt.value = o.name;
+                opt.innerText = o.name + ' (' + o.role + ')';
+                selectEl.appendChild(opt);
+            });
+
             if (id) {
-                const t = tasksData.find(x => x.id == id);
+                const t = tasksData.find(x => x.id === id);
                 if (t) {
                     document.getElementById('task-title').value = t.title;
-                    if (select) select.value = t.officer;
+                    document.getElementById('task-officer').value = t.officer;
                     document.getElementById('task-deadline').value = t.deadline;
                     document.getElementById('task-priority').value = t.priority;
                     document.getElementById('task-status').value = t.status;
@@ -1146,8 +1198,8 @@
         }
 
         function deleteTask(id) {
-            if (!confirm("Đồng chí ADMIN có chắc chắn muốn xóa Nhiệm vụ này?")) return;
-            tasksData = tasksData.filter(t => t.id != id);
+            if (!confirm("Xóa nhiệm vụ này?")) return;
+            tasksData = tasksData.filter(x => x.id !== id);
             saveStorageData(STORAGE_KEYS.TASKS, tasksData);
             renderTasks();
         }
@@ -1157,44 +1209,49 @@
             if (!tbody) return;
             tbody.innerHTML = '';
 
-            const searchTerm = (document.getElementById('dvc-search-input')?.value || '').toLowerCase();
-            const filtered = dvcData.filter(d => {
-                const matchesFilter = currentDvcFilter === 'all' || d.status === currentDvcFilter;
-                const matchesSearch = d.id.toLowerCase().includes(searchTerm) || 
-                                      d.citizen.toLowerCase().includes(searchTerm) || 
-                                      d.procedure.toLowerCase().includes(searchTerm);
-                return matchesFilter && matchesSearch;
+            let filtered = dvcData;
+            if (currentDvcFilter !== 'all') {
+                filtered = dvcData.filter(x => x.status === currentDvcFilter);
+            }
+
+            const searchKey = document.getElementById('dvc-search-input') ? document.getElementById('dvc-search-input').value.toLowerCase() : '';
+            if (searchKey) {
+                filtered = filtered.filter(x => x.id.toLowerCase().includes(searchKey) || x.citizen.toLowerCase().includes(searchKey) || x.procedure.toLowerCase().includes(searchKey));
+            }
+
+            let pendingCount = 0;
+            let doneCount = 0;
+
+            filtered.forEach(d => {
+                if (d.status === 'Đang xử lý') pendingCount++;
+                if (d.status === 'Đã hoàn thành') doneCount++;
+
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 border-b";
+                tr.innerHTML = `
+                    <td class="p-2.5 font-bold text-red-700">${d.id}</td>
+                    <td class="p-2.5 font-bold text-slate-800">${d.procedure}</td>
+                    <td class="p-2.5">${d.citizen}<br><span class="text-[10px] text-slate-400">${d.phone}</span></td>
+                    <td class="p-2.5">${d.date}</td>
+                    <td class="p-2.5">${d.deadline}</td>
+                    <td class="p-2.5">${d.officer}</td>
+                    <td class="p-2.5"><span class="px-2 py-0.5 rounded text-[10px] font-bold ${d.status === 'Đã hoàn thành' ? 'bg-emerald-100 text-emerald-800' : 'bg-yellow-100 text-yellow-800'}">${d.status}</span></td>
+                    <td class="p-2.5 text-center role-officer-or-admin ${currentRole === 'admin' || currentRole === 'officer' ? '' : 'hidden'}">
+                        <button type="button" onclick="openDvcModal('${d.id}')" class="text-blue-600 hover:text-blue-800 p-1"><i class="fa-solid fa-pen"></i></button>
+                        <button type="button" onclick="deleteDvc('${d.id}')" class="text-red-600 hover:text-red-800 p-1"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
             });
 
             if (document.getElementById('stat-dvc-total')) document.getElementById('stat-dvc-total').innerText = dvcData.length;
             if (document.getElementById('stat-dvc-pending')) document.getElementById('stat-dvc-pending').innerText = dvcData.filter(x => x.status === 'Đang xử lý').length;
             if (document.getElementById('stat-dvc-done')) document.getElementById('stat-dvc-done').innerText = dvcData.filter(x => x.status === 'Đã hoàn thành').length;
             if (document.getElementById('stat-officer-pending-dvc')) document.getElementById('stat-officer-pending-dvc').innerText = dvcData.filter(x => x.status === 'Đang xử lý').length;
-
-            filtered.forEach(d => {
-                const tr = document.createElement('tr');
-                tr.className = "hover:bg-slate-50 border-b";
-                tr.innerHTML = `
-                    <td class="p-2.5 font-bold text-red-700">${d.id}</td>
-                    <td class="p-2.5 font-bold text-slate-800">${d.procedure}</td>
-                    <td class="p-2.5">${d.citizen} (${d.phone})</td>
-                    <td class="p-2.5">${d.date}</td>
-                    <td class="p-2.5 font-semibold">${d.deadline}</td>
-                    <td class="p-2.5">${d.officer}</td>
-                    <td class="p-2.5">
-                        <span class="px-2 py-0.5 rounded font-bold ${d.status === 'Đã hoàn thành' ? 'bg-emerald-100 text-emerald-800' : 'bg-yellow-100 text-yellow-800'}">${d.status}</span>
-                    </td>
-                    <td class="p-2.5 text-center space-x-1 ${(currentRole === 'admin' || currentRole === 'officer') ? '' : 'hidden'}">
-                        <button type="button" onclick="openDvcModal('${d.id}')" class="text-blue-600 hover:text-blue-800 p-1" title="Sửa"><i class="fa-solid fa-pen"></i></button>
-                        <button type="button" onclick="deleteDvc('${d.id}')" class="text-red-600 hover:text-red-800 p-1 ${currentRole === 'admin' ? '' : 'hidden'}" title="Xóa"><i class="fa-solid fa-trash"></i></button>
-                    </td>
-                `;
-                tbody.appendChild(tr);
-            });
         }
 
-        function filterDvcStatus(status) {
-            currentDvcFilter = status;
+        function filterDvcStatus(st) {
+            currentDvcFilter = st;
             renderDvcList();
         }
 
@@ -1203,27 +1260,25 @@
         }
 
         function openDvcModal(id = null) {
-            const select = document.getElementById('dvc-officer');
-            if (select) {
-                select.innerHTML = '';
-                officersData.forEach(o => {
-                    const opt = document.createElement('option');
-                    opt.value = o.name;
-                    opt.textContent = o.name;
-                    select.appendChild(opt);
-                });
-            }
-
             document.getElementById('dvc-edit-id').value = id || '';
+            const selectEl = document.getElementById('dvc-officer');
+            selectEl.innerHTML = '';
+            officersData.forEach(o => {
+                const opt = document.createElement('option');
+                opt.value = o.name;
+                opt.innerText = o.name;
+                selectEl.appendChild(opt);
+            });
+
             if (id) {
-                const d = dvcData.find(item => String(item.id) === String(id));
+                const d = dvcData.find(x => x.id === id);
                 if (d) {
                     document.getElementById('dvc-procedure').value = d.procedure;
                     document.getElementById('dvc-citizen').value = d.citizen;
                     document.getElementById('dvc-phone').value = d.phone;
-                    if (select) select.value = d.officer;
+                    document.getElementById('dvc-officer').value = d.officer;
                     document.getElementById('dvc-status').value = d.status;
-                    document.getElementById('dvc-note').value = d.note || '';
+                    document.getElementById('dvc-note').value = d.note;
                 }
             } else {
                 document.getElementById('dvc-citizen').value = '';
@@ -1246,33 +1301,65 @@
             const officer = document.getElementById('dvc-officer').value;
             const status = document.getElementById('dvc-status').value;
             const note = document.getElementById('dvc-note').value.trim();
+            const nowStr = new Date().toLocaleDateString('vi-VN');
 
             if (editId) {
-                const idx = dvcData.findIndex(d => String(d.id) === String(editId));
-                if (idx !== -1) dvcData[idx] = { ...dvcData[idx], procedure, citizen, phone, officer, status, note };
+                const idx = dvcData.findIndex(x => x.id === editId);
+                if (idx !== -1) {
+                    dvcData[idx] = { ...dvcData[idx], procedure, citizen, phone, officer, status, note };
+                }
             } else {
-                const today = new Date().toLocaleDateString('vi-VN');
-                dvcData.unshift({
-                    id: 'DVC-2026-' + String(dvcData.length + 1).padStart(3, '0'),
-                    procedure, citizen, phone, date: today, deadline: '3 ngày', officer, status, note
-                });
+                const newId = 'DVC-2026-' + String(Math.floor(Math.random() * 900) + 100);
+                dvcData.unshift({ id: newId, procedure, citizen, phone, date: nowStr, deadline: '3 ngày', officer, status, note });
             }
-
             saveStorageData(STORAGE_KEYS.DVC, dvcData);
             renderDvcList();
             closeDvcModal();
         }
 
         function deleteDvc(id) {
-            if (!confirm("Đồng chí ADMIN có chắc chắn muốn xóa Hồ sơ này?")) return;
-            dvcData = dvcData.filter(d => String(d.id) !== String(id));
+            if (!confirm("Xóa hồ sơ dịch vụ công này?")) return;
+            dvcData = dvcData.filter(x => x.id !== id);
             saveStorageData(STORAGE_KEYS.DVC, dvcData);
             renderDvcList();
         }
 
+        function renderReports() {
+            const container = document.getElementById('reports-stream');
+            if (!container) return;
+            container.innerHTML = '';
+
+            let filtered = publicReports;
+            if (reportFilterLoc !== 'all') {
+                filtered = publicReports.filter(x => x.location === reportFilterLoc);
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 text-center py-4">Chưa có phản ánh nào tại khu vực này.</p>`;
+                return;
+            }
+
+            filtered.forEach(r => {
+                const div = document.createElement('div');
+                div.className = "p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5";
+                div.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] bg-red-100 text-red-800 font-bold px-2 py-0.5 rounded">${r.cat}</span>
+                        <span class="text-[10px] text-slate-400">${r.time}</span>
+                    </div>
+                    <p class="font-bold text-slate-800 text-xs">${r.content}</p>
+                    <div class="flex justify-between items-center text-[11px] pt-1 border-t border-slate-200 text-slate-500">
+                        <span><i class="fa-solid fa-location-dot text-red-600 mr-1"></i> ${r.location} (Gửi bởi: <strong>${r.name}</strong>)</span>
+                        <span class="text-emerald-700 font-bold"><i class="fa-solid fa-circle-check mr-0.5"></i> ${r.status}</span>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
         function filterReportByLocation(loc) {
-            switchTab('phan-anh-dan');
             reportFilterLoc = loc;
+            switchTab('phan-anh-dan');
             renderReports();
         }
 
@@ -1281,101 +1368,69 @@
             renderReports();
         }
 
-        function renderReports() {
-            const container = document.getElementById('reports-stream');
-            if (!container) return;
-            container.innerHTML = '';
-
-            const filtered = publicReports.filter(r => reportFilterLoc === 'all' || r.location.includes(reportFilterLoc));
-
-            if (filtered.length === 0) {
-                container.innerHTML = `<div class="text-center py-8 text-slate-400 font-medium">Không có phản ánh nào phù hợp.</div>`;
-                return;
-            }
-
-            filtered.forEach((r, idx) => {
-                const card = document.createElement('div');
-                card.className = "p-3.5 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-1.5 relative hover:border-emerald-500 transition";
-                card.innerHTML = `
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded border border-red-100">${r.cat}</span>
-                        <span class="text-[10px] text-slate-400">${r.time}</span>
-                    </div>
-                    <p class="font-bold text-slate-800">${r.location} - Người báo: <span class="text-blue-900">${r.name}</span></p>
-                    <p class="text-slate-600 bg-white p-2 rounded border border-slate-100 leading-relaxed">${r.content}</p>
-                    <div class="flex justify-between items-center pt-1 border-t border-slate-200/60">
-                        <span class="text-emerald-700 font-bold text-[10px] flex items-center gap-1"><i class="fa-solid fa-shield"></i> ${r.status}</span>
-                        <button type="button" onclick="deleteReport(${idx})" class="text-red-500 hover:text-red-700 text-xs ${currentRole === 'admin' ? '' : 'hidden'}" title="Xóa phản ánh"><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-        }
-
         function handleCitizenReport(e) {
             if (e) e.preventDefault();
             const cat = document.getElementById('reporter-category').value;
-            const name = document.getElementById('reporter-name').value.trim() || 'Ẩn danh';
-            const loc = document.getElementById('reporter-location').value;
+            const name = document.getElementById('reporter-name').value.trim() || 'Công dân ẩn danh';
+            const phone = document.getElementById('reporter-phone').value.trim() || 'Không cung cấp';
+            const location = document.getElementById('reporter-location').value;
             const content = document.getElementById('reporter-content').value.trim();
 
-            if (!content) return;
+            const newRep = {
+                id: 'PA-' + Date.now(),
+                cat, name, phone, location, content,
+                time: 'Vừa xong',
+                status: 'Đã tiếp nhận'
+            };
 
-            publicReports.unshift({
-                id: 'PA-' + (100 + publicReports.length + 1),
-                cat, name, location: loc, content, time: 'Vừa xong', status: 'Mới tiếp nhận'
-            });
-
+            publicReports.unshift(newRep);
             saveStorageData(STORAGE_KEYS.REPORTS, publicReports);
+            renderReports();
+            alert("Gửi phản ánh ANTT thành công! Trực ban Công an xã đã nhận được thông tin.");
             document.getElementById('reporter-content').value = '';
             document.getElementById('reporter-name').value = '';
-            renderReports();
-            alert("Gửi phản ánh thành công! Công an xã Phú Trung đã tiếp nhận thông tin.");
-        }
-
-        function deleteReport(index) {
-            if (!confirm("Đồng chí ADMIN có chắc muốn xóa Phản ánh này?")) return;
-            publicReports.splice(index, 1);
-            saveStorageData(STORAGE_KEYS.REPORTS, publicReports);
-            renderReports();
+            document.getElementById('reporter-phone').value = '';
         }
 
         function sendAiMessage() {
-            const input = document.getElementById('ai-input');
+            const inputEl = document.getElementById('ai-input');
             const chatBox = document.getElementById('ai-chat-box');
-            if (!input || !input.value.trim()) return;
+            const query = inputEl.value.trim();
+            if (!query) return;
 
-            const userText = input.value.trim();
-            input.value = '';
-
-            const userBubble = document.createElement('div');
-            userBubble.className = "flex justify-end";
-            userBubble.innerHTML = `<div class="bg-red-700 text-white p-3 rounded-2xl rounded-tr-none text-xs max-w-[80%] shadow">${userText}</div>`;
-            chatBox.appendChild(userBubble);
-
-            let aiReply = "Đã tiếp nhận yêu cầu. Hệ thống đang đối chiếu Cơ sở Dữ liệu Pháp luật Quốc gia.";
-            const lower = userText.toLowerCase();
-
-            if (lower.includes('nồng độ cồn') || lower.includes('xử phạt')) {
-                aiReply = "Theo Nghị định 100/2019/NĐ-CP (sửa đổi bởi NĐ 123/2021/NĐ-CP):\n• Ô tô: Phạt từ 6 - 40 triệu đồng, tước Bằng lái 10 - 24 tháng.\n• Xe máy: Phạt từ 2 - 8 triệu đồng, tước Bằng lái 10 - 24 tháng.\n• Đề nghị công dân tuân thủ nghiêm: 'Đã uống rượu bia, không lái xe'.";
-            } else if (lower.includes('tạm trú') || lower.includes('thường trú') || lower.includes('cư trú')) {
-                aiReply = "Theo Luật Cư trú 2020 & Quy trình DVC Trực tuyến:\n1. Hồ sơ gồm: Tờ khai CT01, Giấy tờ chứng minh chỗ ở hợp pháp (Hợp đồng thuê nhà/sổ đỏ).\n2. Nộp trực tuyến qua Cổng DVC Bộ Công an hoặc Cổng DVC Quốc gia.\n3. Thời hạn giải quyết: 03 ngày làm việc kể từ khi nhận đủ hồ sơ.";
-            } else if (lower.includes('pccc') || lower.includes('cháy')) {
-                aiReply = "Quy định An toàn PCCC cho nhà ở kết hợp KD (QCVN 06:2022/BXD):\n• Phải trang bị tối thiểu 02 bình chữa cháy CO2/Bột (4kg).\n• Lắp đặt hệ thống báo cháy tự động hoặc thiết bị cảnh báo khói cục bộ.\n• Lối thoát nạn thứ 2 không bị bịt kín bởi lồng sắt (chuồng cọp).";
-            }
+            const userDiv = document.createElement('div');
+            userDiv.className = "flex items-start justify-end space-x-2";
+            userDiv.innerHTML = `
+                <div class="bg-red-700 text-white p-3.5 rounded-2xl rounded-tr-none shadow-sm max-w-[85%] text-xs leading-relaxed">
+                    <p>${query}</p>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold flex-shrink-0 text-xs shadow">Bạn</div>
+            `;
+            chatBox.appendChild(userDiv);
+            inputEl.value = '';
+            chatBox.scrollTop = chatBox.scrollHeight;
 
             setTimeout(() => {
-                const aiBubble = document.createElement('div');
-                aiBubble.className = "flex items-start space-x-2";
-                aiBubble.innerHTML = `
+                let aiReply = "Cảm ơn đồng chí / công dân đã câu hỏi về quy định. Theo CSDL Pháp luật Công an xã Phú Trung, mọi thủ tục hành chính, cư trú, đăng ký PCCC và xử lý vi phạm đều tuân thủ nghiêm ngặt Luật Cư trú, Luật CCCD và các Thông tư mới nhất của Bộ Công an.";
+                if (query.toLowerCase().includes('nồng độ cồn')) {
+                    aiReply = "Theo Nghị định xử phạt vi phạm giao thông mới nhất, hành vi vi phạm nồng độ cồn khi điều khiển phương tiện sẽ bị phạt tiền mức cao nhất, tước giấy phép lái xe từ 22 đến 24 tháng và tạm giữ phương tiện đến 7 ngày theo quy định.";
+                } else if (query.toLowerCase().includes('tạm trú')) {
+                    aiReply = "Thủ tục đăng ký tạm trú: Công dân đến thuê trọ trong thời hạn 30 ngày kể từ ngày chuyển đến phải làm thủ tục đăng ký tạm trú tại Công an xã Phú Trung. Có thể nộp trực tuyến qua Cổng Dịch vụ công Quốc gia / VNeID hoặc trực tiếp tại trụ sở CAX.";
+                } else if (query.toLowerCase().includes('pccc')) {
+                    aiReply = "Quy định PCCC cho hộ kinh doanh: Phải trang bị ít nhất 01 bình chữa cháy bột/CO2 đạt chuẩn, có bảng nội quy phòng cháy, lối thoát nạn thông thoáng không bị vật cản và thực hiện kiểm tra an toàn định kỳ.";
+                }
+
+                const aiDiv = document.createElement('div');
+                aiDiv.className = "flex items-start space-x-2";
+                aiDiv.innerHTML = `
                     <div class="w-8 h-8 rounded-full bg-yellow-500 text-slate-900 flex items-center justify-center font-bold flex-shrink-0 text-xs shadow">AI</div>
-                    <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow border border-slate-200 text-xs max-w-[85%] text-slate-800 whitespace-pre-line leading-relaxed">
-                        ${aiReply}
+                    <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-slate-200 max-w-[85%] text-slate-800 leading-relaxed">
+                        <p>${aiReply}</p>
                     </div>
                 `;
-                chatBox.appendChild(aiBubble);
+                chatBox.appendChild(aiDiv);
                 chatBox.scrollTop = chatBox.scrollHeight;
-            }, 500);
+            }, 600);
         }
 
         function askQuickQuestion(q) {
@@ -1383,65 +1438,58 @@
             sendAiMessage();
         }
 
+        function exportData(type) {
+            let dataStr = "";
+            if (type === 'tasks') {
+                dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(tasksData, null, 2));
+            } else {
+                dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dvcData, null, 2));
+            }
+            const dlAnchor = document.createElement('a');
+            dlAnchor.setAttribute("href", dataStr);
+            dlAnchor.setAttribute("download", `BaoCao_${type}_CAX_PhuTrung_2026.json`);
+            document.body.appendChild(dlAnchor);
+            dlAnchor.click();
+            dlAnchor.remove();
+        }
+
+        function resetAllSystemData() {
+            if (!confirm("Khôi phục toàn bộ dữ liệu gốc của hệ thống Công an xã Phú Trung?")) return;
+            localStorage.clear();
+            location.reload();
+        }
+
         function toggleSecurityModal() {
             document.getElementById('security-modal').classList.toggle('hidden');
         }
 
         function editOfficerName() {
-            if (currentRole !== 'admin') return;
-            const name = prompt("[ADMIN] Nhập tên Cán bộ / Chỉ huy:", document.getElementById('current-officer-name').innerText);
-            if (name && name.trim() !== '') {
-                document.getElementById('current-officer-name').innerText = name.trim();
-                localStorage.setItem(STORAGE_KEYS.OFFICER_NAME, name.trim());
+            const newName = prompt("Nhập tên hiển thị của đồng chí:", document.getElementById('current-officer-name').innerText);
+            if (newName && newName.trim() !== '') {
+                document.getElementById('current-officer-name').innerText = newName.trim();
+                localStorage.setItem(STORAGE_KEYS.OFFICER_NAME, newName.trim());
             }
-        }
-
-        function exportData(type) {
-            let dataStr = "";
-            let filename = "export.json";
-
-            if (type === 'tasks') {
-                dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(tasksData, null, 2));
-                filename = "NhiemVu_CA_PhuTrung.json";
-            } else if (type === 'dvc') {
-                dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dvcData, null, 2));
-                filename = "HoSo_DVC_CA_PhuTrung.json";
-            }
-
-            const dlAnchorElem = document.createElement('a');
-            dlAnchorElem.setAttribute("href", dataStr);
-            dlAnchorElem.setAttribute("download", filename);
-            document.body.appendChild(dlAnchorElem);
-            dlAnchorElem.click();
-            dlAnchorElem.remove();
-        }
-
-        function resetAllSystemData() {
-            if (!confirm("Đồng chí có chắc muốn khôi phục toàn bộ dữ liệu mẫu ban đầu? Mọi dữ liệu chỉnh sửa của Admin sẽ được đặt lại.")) return;
-            localStorage.removeItem(STORAGE_KEYS.OFFICERS);
-            localStorage.removeItem(STORAGE_KEYS.TASKS);
-            localStorage.removeItem(STORAGE_KEYS.DVC);
-            localStorage.removeItem(STORAGE_KEYS.REPORTS);
-            localStorage.removeItem(STORAGE_KEYS.STATS);
-            localStorage.removeItem(STORAGE_KEYS.OFFICER_NAME);
-            localStorage.removeItem(STORAGE_KEYS.USER_ROLE);
-            location.reload();
         }
 
         window.onload = function() {
             startLiveClock();
-
-            const savedRole = localStorage.getItem(STORAGE_KEYS.USER_ROLE) || 'citizen';
-            switchUserRole(savedRole === 'admin' ? 'citizen' : savedRole);
-
-            const savedOfficerName = localStorage.getItem(STORAGE_KEYS.OFFICER_NAME);
-            if (savedOfficerName) document.getElementById('current-officer-name').innerText = savedOfficerName;
-
             renderStats();
             renderOfficers();
             renderTasks();
             renderDvcList();
             renderReports();
+
+            const savedRole = localStorage.getItem(STORAGE_KEYS.USER_ROLE);
+            if (savedRole) {
+                switchUserRole(savedRole);
+            } else {
+                switchUserRole('citizen');
+            }
+
+            const savedName = localStorage.getItem(STORAGE_KEYS.OFFICER_NAME);
+            if (savedName && document.getElementById('current-officer-name')) {
+                document.getElementById('current-officer-name').innerText = savedName;
+            }
         };
     </script>
 </body>
